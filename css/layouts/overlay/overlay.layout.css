@@ -1,0 +1,27 @@
+/*
+
+.l-page
+{
+        margin:0 auto;
+        @include breakpoint($tab,true)
+        {
+                width:$tab;
+        }
+        @include breakpoint($desk,true)
+        {
+                width:$desk;
+        }
+
+}
+
+.l-main
+{
+        @include clearfix;
+}
+.l-content
+{
+        @include grid-span($home_size_content,$home_startgrid_content);
+}
+
+
+*/

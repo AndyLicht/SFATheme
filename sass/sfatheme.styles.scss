@@ -1,0 +1,138 @@
+// Import external libraries.
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+
+// Import variables, abstractions, base styles and components using globbing.
+//
+// Globbing will always import files alphabetically. Optimally, all your
+// components should be self-contained and explicit enough to not have any
+// contained styles leak into unrelated components: The import order should not
+// affect the result.
+//
+// If there are variables, functions or mixins that depend on each other and
+// therefore need to be imported in a specific order you can import them
+// directly. Variables-, function- or mixin providing partials should never
+// output any styles themselves: Importing them multiple times to resolve
+// dependencies shouldn't be a problem.
+@import "variables/**/*";
+@import "abstractions/**/*";
+@import "base/**/*";
+@import "components/**/*";
+@import "effects/**/*";
+
+.l-page
+{
+    @include clearfix;
+    margin:0 auto;
+    @include breakpoint($tab,true)
+    {
+	width:$tab;
+    }
+    @include breakpoint($desk,true)
+    {
+	width:$desk;
+    }
+}
+.l-region--top
+{
+    @include grid-span(12,1);
+    width:100%;
+}
+
+.pane-menu-menu-topmenue ul
+{
+    float:right;
+    padding-right:25px;
+}
+.pane-menu-menu-topmenue li
+{
+    padding-left:10pxpx;
+    padding-right:10px;
+    display: inline;
+}
+.pane-menu-menu-topmenue a
+{
+    text-decoration:none;
+}
+.l-header
+{
+    @include grid-span(12,1);
+    background-color:rgb(0,0,36);
+}
+.l-region--branding
+{
+    @include grid-span(4,1);
+}
+.l-region--slideshow
+{
+    @include grid-span(8,5);
+}
+.pane-page-logo a img
+{
+    display:block;
+    margin:auto;
+    max-height:295px;
+}
+.l-region--slideshow .views-slideshow-cycle-main-frame-row-item
+{
+    position:relative;
+}
+.l-region--slideshow .views-field-title
+{
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(0,0,36,0.5);
+    position:absolute;
+    width:100%;
+}
+.l-region--slideshow .views-field-title a
+{
+    color: grey;
+    text-decoration:none;
+}
+.l-region--slideshow .views-field-image
+{
+    position:absolute;
+}
+
+.l-region--navigation
+{
+    @include grid-span(12,1);
+    background-color: rgb(0,0,36);
+}
+
+.pane-node
+{
+    @include grid-span(12,1);
+}
+
+.pane-page-logo a img
+{
+    display:block;
+    margin:auto;
+    max-height:295px;
+}
+
+
+.sf-menu a
+{
+    font-size: 1.5em;
+    color:white;
+    text-decoration:none;
+}
+.sf-menu li
+{
+    @include trim();
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:0.625em;
+    padding-right:0.625em;
+    width:33.333333333%;
+    text-align:center;
+    vertical-align:middle;
+}
+.l-region--footer
+{
+    @include grid-span(12,1);
+}

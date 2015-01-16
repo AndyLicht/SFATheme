@@ -1,0 +1,23 @@
+/*
+.l-page
+{
+        margin:0 auto;
+        @include breakpoint($tab,true)
+        {
+                width:$tab;
+        }
+        @include breakpoint($desk,true)
+        {
+                width:$desk;
+        }
+
+}
+.l-header
+{
+}
+.l-content
+{
+        @include clearfix;
+}
+
+*/

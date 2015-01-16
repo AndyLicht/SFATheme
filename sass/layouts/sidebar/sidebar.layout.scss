@@ -1,0 +1,19 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+@import "toolkit-no-css";
+
+@import "../../variables/**/*";
+
+.l-content
+{
+    @include grid-span(12,1);
+}
+.l-region--sidebar
+{
+    @include grid-span(3,1);
+}
+.l-main
+{
+    @include grid-span(8,4);
+}
