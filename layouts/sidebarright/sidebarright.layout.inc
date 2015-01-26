@@ -1,4 +1,4 @@
-name = Sidebar
+name = Sidebar_Hannes
 description = A single sidebar interior page
 template = sidebarright-layout
 preview = preview.png
