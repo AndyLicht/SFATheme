@@ -1,5 +1,5 @@
 name = sfatheme
-description = Please provide a description for your theme.
+description = Please provide a description for your SFA theme.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
