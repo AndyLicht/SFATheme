@@ -1,0 +1,62 @@
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@import "../../variables/**/*";
+
+
+.l-page
+{
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 100%;
+    
+    //@include clearfix;
+    @include breakpoint($stab, true)
+    {
+        //width:$stab;       
+	.l-region--header
+    {
+	@include grid-span(12,1);
+	}
+    .l-region--sidebar
+        {
+	@include grid-span(12,1);
+	}
+    .l-region--detail
+        {
+	@include grid-span(12,1);
+	}
+	.l-region--footer
+        {
+	@include grid-span(12,1);
+	}
+    }
+	
+        
+    @include breakpoint($sdesk, true)
+    {
+        //width:$stab;       
+	.l-region--header
+        {
+	@include grid-span(12,1);
+        background-color: blue;
+	}
+        .l-region--sidebar
+        {
+	@include grid-span(12,1);
+        background-color: red;
+	}
+        .l-region--detail
+        {
+	@include grid-span(12,1);
+        background-color: black;
+	}
+	.l-region--footer
+        {
+	@include grid-span(12,1);
+        background-color: green;
+	}
+    }
+}
+		
