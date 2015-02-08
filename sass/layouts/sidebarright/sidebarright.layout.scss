@@ -8,7 +8,7 @@
 .l-page
 {
     margin: 0 auto;
-    margin-top: 3em;
+    margin-top: 1.5em;
     width: 100%;
     
     //@include clearfix;
@@ -21,18 +21,17 @@
 	}
     .l-region--sidebar
         {
-	@include grid-span(12,1);
+	@include grid-span(3,10);
 	}
     .l-region--detail
         {
-	@include grid-span(12,1);
+	@include grid-span(9,1);
 	}
 	.l-region--footer
         {
 	@include grid-span(12,1);
 	}
     }
-	
         
     @include breakpoint($desk, true)
     {
@@ -40,23 +39,125 @@
 	.l-region--header
         {
 	@include grid-span(12,1);
-        background-color: blue;
+        background-color: #e9efe0;
 	}
         .l-region--sidebar
         {
-	@include grid-span(2,11);
-        background-color: white;
+	@include grid-span(3,10);
+        background-color: #e9efe0;
+	}
+	//Fixierte Darstellung des Menues (Desktop)
+	.l-region--sidebar .menu 
+	{
+	position: fixed;
 	}
         .l-region--detail
         {
-	@include grid-span(10,1);
-        background-color: pink;
+	@include grid-span(9,1);
+        background-color: #e9efe0;
 	}
 	.l-region--footer
         {
 	@include grid-span(12,1);
-        background-color: green;
+        background-color: #e9efe0;
+	clear: both;
 	}
     }
 }
-		
+
+body {
+    background-color: #e9efe0;
+}
+
+h2 {
+    color: white;
+    font-size: 1.2em;
+    display: inline;
+}
+
+.l-region--header {
+    text-align: right;
+    padding-right: 1.4em;
+}
+
+.pane-page-logo {
+    margin-left: 2.5em;
+    margin-top: 1.3em;
+    width: 60%;
+    height: auto;
+}
+
+.l-region--sidebar .menu {
+   //position: fixed;
+}
+
+.l-region--sidebar .menu a {
+    background: #000024;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.l-region--sidebar .menu .leaf {
+    list-style-image: none;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.l-region--sidebar .menu a:hover {
+    text-decoration: none;
+    background: #FFCC01;
+    color: black;
+}
+
+.l-region--footer .menu .leaf {
+    list-style-image: none;
+    list-style-type: none;
+    float: left;
+    margin-right: 1em;
+}
+
+.l-region--footer .menu {
+    padding-left: 0;
+    padding-bottom: 2em;
+}
+
+.l-region--footer a {
+    text-decoration: none;
+    color: grey;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.pane-node {
+    background: white;
+    margin-top: 1.3em;
+    border-top: 0.33em solid #000024;
+}
+
+.node__content {
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.pane-title {
+    padding-left: 0.8em;
+    background-color: #000024;
+    padding-right: 0.8em;
+    padding-bottom: 0.33em;
+}
+
+.form-submit {
+    background-color: #FFCC01;
+    //background-color: transparent;
+    padding: 3px 10px 3px 10px; //Oben, Rechts, Unten, Links
+    border: 0px;
+    margin-left: -0.25em;
+    color: white;
+    font-weight: bold;
+}
+
