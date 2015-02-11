@@ -1,7 +1,7 @@
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\000039}}
 .l-page {
   margin: 0 auto;
-  margin-top: 1.5em;
+  margin-top: 2.5em;
   width: 100%; }
   @media (min-width: 44em) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\000039}}
@@ -56,9 +56,6 @@
         margin-right: 0;
         clear: none;
         background-color: #e9efe0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000352}}
-      .l-page .l-region--sidebar .menu {
-        position: fixed; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000356}}
       .l-page .l-region--detail {
         width: 75%;
@@ -89,78 +86,77 @@ h2 {
   display: inline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000380}}
-.l-region--header {
-  text-align: right;
-  padding-right: 3em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000385}}
 .pane-page-logo {
   margin-left: 2.5em;
-  margin-top: 1.3em;
-  width: 60%;
-  height: auto; }
+  width: 8.5em;
+  height: auto;
+  position: fixed; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000396}}
-.l-region--sidebar .menu a {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000387}}
+.l-region--sidebar .pane-menu-menu-hauptmen {
+  margin-top: 9em;
+  position: fixed; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\0000392}}
+.l-region--sidebar .pane-menu-menu-hauptmen .menu a {
   background: #000024;
   padding: 10px 10px 10px 10px;
   color: white;
   text-decoration: none;
   font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003104}}
-.l-region--sidebar .menu .leaf {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003100}}
+.l-region--sidebar .pane-menu-menu-hauptmen .menu .leaf {
   list-style-image: none;
   list-style-type: none;
   margin-bottom: 30px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003110}}
-.l-region--sidebar .menu a:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003106}}
+.l-region--sidebar .pane-menu-menu-hauptmen .menu a:hover {
   text-decoration: none;
   background: #FFCC01;
   color: black; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003116}}
-.l-region--footer .menu .leaf {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003112}}
+.l-region--sidebar .pane-menu-menu-impressum .menu {
+  position: fixed;
+  bottom: 0px;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003118}}
+.l-region--sidebar .pane-menu-menu-impressum .menu .leaf {
   list-style-image: none;
-  list-style-type: none;
-  float: left;
-  margin-right: 1em; }
+  list-style-type: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003123}}
-.l-region--footer .menu {
-  padding-left: 0;
-  padding-bottom: 2em; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003128}}
-.l-region--footer a {
+.l-region--sidebar .pane-menu-menu-impressum a {
   text-decoration: none;
   color: grey; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003133}}
-a:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003128}}
+.l-region--sidebar .pane-menu-menu-impressum a:hover {
   text-decoration: underline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003132}}
 .pane-node {
   background: white;
-  margin-top: 1.3em;
+  margin-bottom: 1.5em;
   border-top: 0.33em solid #000024; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003138}}
 .node__content {
   padding-right: 1em;
   padding-left: 1em;
   padding-bottom: 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003144}}
 .pane-title {
   padding-left: 0.8em;
   background-color: #000024;
   padding-right: 0.8em;
   padding-bottom: 0.33em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003151}}
 .form-submit {
   background-color: #FFCC01;
   padding: 3px 10px 3px 10px;
@@ -168,3 +164,9 @@ a:hover {
   margin-left: -0.25em;
   color: white;
   font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/sfa\/sites\/all\/themes\/sfatheme\/sass\/layouts\/sidebarright\/sidebarright\.layout\.scss}line{font-family:\00003160}}
+.pane-search-form {
+  position: fixed;
+  margin-left: 2.5em;
+  margin-top: -2em; }

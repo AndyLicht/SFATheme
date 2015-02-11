@@ -8,7 +8,7 @@
 .l-page
 {
     margin: 0 auto;
-    margin-top: 1.5em;
+    margin-top: 2.5em;
     width: 100%;
     
     //@include clearfix;
@@ -50,7 +50,7 @@
 	//Fixierte Darstellung des Menues (Desktop)
 	.l-region--sidebar .menu 
 	{
-	position: fixed;
+//	position: fixed;
 	}
         .l-region--detail
         {
@@ -77,23 +77,19 @@ h2 {
     display: inline;
 }
 
-.l-region--header {
-    text-align: right;
-    padding-right: 3em;
-}
-
 .pane-page-logo {
     margin-left: 2.5em;
-    margin-top: 1.3em;
-    width: 60%;
+    width: 8.5em;
     height: auto;
+    position: fixed;
 }
 
-.l-region--sidebar .menu {
-   //position: fixed;
+.l-region--sidebar .pane-menu-menu-hauptmen {
+    margin-top: 9em;
+    position: fixed;
 }
 
-.l-region--sidebar .menu a {
+.l-region--sidebar .pane-menu-menu-hauptmen .menu a {
     background: #000024;
     padding: 10px 10px 10px 10px;
     color: white;
@@ -101,42 +97,41 @@ h2 {
     font-weight: bold;
 }
 
-.l-region--sidebar .menu .leaf {
+.l-region--sidebar .pane-menu-menu-hauptmen .menu .leaf {
     list-style-image: none;
     list-style-type: none;
     margin-bottom: 30px;
 }
 
-.l-region--sidebar .menu a:hover {
+.l-region--sidebar .pane-menu-menu-hauptmen  .menu a:hover {
     text-decoration: none;
     background: #FFCC01;
     color: black;
 }
 
-.l-region--footer .menu .leaf {
+.l-region--sidebar .pane-menu-menu-impressum .menu {
+    position: fixed; 
+    bottom: 0px; 
+    width: 100%;
+}
+
+.l-region--sidebar .pane-menu-menu-impressum .menu .leaf {
     list-style-image: none;
     list-style-type: none;
-    float: left;
-    margin-right: 1em;
 }
 
-.l-region--footer .menu {
-    padding-left: 0;
-    padding-bottom: 2em;
-}
-
-.l-region--footer a {
+.l-region--sidebar .pane-menu-menu-impressum a {
     text-decoration: none;
     color: grey;
 }
 
-a:hover {
+.l-region--sidebar .pane-menu-menu-impressum a:hover {
     text-decoration: underline;
 }
 
 .pane-node {
     background: white;
-    margin-top: 1.3em;
+    margin-bottom: 1.5em;
     border-top: 0.33em solid #000024;
 }
 
@@ -155,11 +150,17 @@ a:hover {
 
 .form-submit {
     background-color: #FFCC01;
-    //background-color: transparent;
     padding: 3px 10px 3px 10px; //Oben, Rechts, Unten, Links
     border: 0px;
     margin-left: -0.25em;
     color: white;
     font-weight: bold;
 }
+
+.pane-search-form {
+    position: fixed;
+    margin-left: 2.5em;
+    margin-top: -2em;
+}
+
 
