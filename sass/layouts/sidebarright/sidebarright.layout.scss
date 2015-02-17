@@ -71,12 +71,6 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 
-h2 {
-    color: white;
-    font-size: 1.2em;
-    display: inline;
-}
-
 .pane-page-logo {
     margin-left: 2.5em;
     width: 8.5em;
@@ -101,6 +95,10 @@ h2 {
     list-style-image: none;
     list-style-type: none;
     margin-bottom: 30px;
+}
+
+.l-region--sidebar .pane-menu-menu-hauptmen .menu .active-trail a {
+    background: #FFCC01;
 }
 
 .l-region--sidebar .pane-menu-menu-hauptmen  .menu a:hover {
@@ -129,10 +127,36 @@ h2 {
     text-decoration: underline;
 }
 
-.pane-node {
+.views-row {
     background: white;
     margin-bottom: 1.5em;
     border-top: 0.33em solid #000024;
+}
+
+.views-row-1 .node__title {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.views-row-1 header {
+    position: relative;
+}
+
+.views-row-1 .node__content .field--name-body {
+    background: #000024;
+    color: white;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left: 1em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}    
+
+.views-row-1 .node__content {
+    padding: 0;
+    position: relative;
 }
 
 .node__content {
@@ -141,11 +165,22 @@ h2 {
     padding-bottom: 1em;
 }
 
-.pane-title {
+.node__title {
+    margin: 0;
+    //-webkit-margin-before: 0;
+    //-webkit-margin-after: 0;
+    //-webkit-margin-start: 0;
+    //-webkit-margin-end: 0;
+    font-size: 1em;
+}
+
+.node__title a {
     padding-left: 0.8em;
-    background-color: #000024;
     padding-right: 0.8em;
     padding-bottom: 0.33em;
+    background-color: #000024;
+    color: white;
+    text-decoration: none;
 }
 
 .form-submit {
